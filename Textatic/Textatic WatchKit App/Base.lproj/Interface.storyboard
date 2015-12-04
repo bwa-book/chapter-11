@@ -1,14 +1,28 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="6221" systemVersion="13E28" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="AgC-eL-Hgc">
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="AgC-eL-Hgc">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6213"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="3733"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="8092"/>
     </dependencies>
     <scenes>
         <!--Interface Controller-->
         <scene sceneID="aou-V4-d1y">
             <objects>
-                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModuleProvider="target"/>
+                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="Textatic_WatchKit_App" customModuleProvider="target">
+                    <items>
+                        <imageView alignment="center" id="BIW-jt-yrx"/>
+                        <label alignment="center" text="Label" textAlignment="center" numberOfLines="0" id="OV5-Y6-zQk"/>
+                        <button width="1" alignment="center" verticalAlignment="bottom" title="Input" id="gAr-eR-aeP">
+                            <connections>
+                                <action selector="buttonTapped" destination="AgC-eL-Hgc" id="ngC-DI-2ET"/>
+                            </connections>
+                        </button>
+                    </items>
+                    <connections>
+                        <outlet property="image" destination="BIW-jt-yrx" id="g8c-gW-WRd"/>
+                        <outlet property="label" destination="OV5-Y6-zQk" id="1dV-EY-ZVb"/>
+                    </connections>
+                </controller>
             </objects>
         </scene>
     </scenes>
