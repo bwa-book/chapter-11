@@ -10,5 +10,13 @@ class InterfaceController: WKInterfaceController {
     @IBAction func buttonTapped() {
         
     }
+    
+    private var text = "Tap the button to say something"
+    
+    override func willActivate() {
+        super.willActivate()
+        
+        label.setText(text)
+    }
 
 }
